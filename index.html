@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        header .highlight {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* About Section */
+        #about {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: -2rem;
+            border-radius: 8px;
+        }
+        #about img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        #about p {
+            margin-top: 0.5rem;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 2rem 1rem;
+        }
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .project {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #4e54c8;
+        }
+        .project p {
+            margin: 0.5rem 0 1rem;
+        }
+        .project a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: white;
+            background: #4e54c8;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .project a:hover {
+            background: #8f94fb;
+        }
+
+        /* Resume Section */
+        #resume {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        #resume h2 {
+            margin-bottom: 1rem;
+        }
+        #resume a {
+            padding: 0.7rem 1.2rem;
+            font-size: 1rem;
+            text-decoration: none;
+            background: #4e54c8;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        #resume a:hover {
+            background: #8f94fb;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #8f94fb;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+                margin: 0 0.5rem;
+            }
+            #about img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm <span class="highlight">Soham Mane</span>, a <span class="highlight">Pre-Final Year Student at VIT, Pune</span></p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <section id="about" class="container">
+        <img src="photo.jpeg" alt="My Photo">
+        <p>Hello! I'm <strong>Soham Mane</strong>, passionate about <strong>Web Development</strong> and <strong>Open Source</strong>. I enjoy solving challenges in <strong>Web Apps</strong> and <strong>Mobile Apps</strong>. Explore my portfolio to learn more!</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Real Time Speech Emotion Recognition</h3>
+                <p>Input the audio file and get the emotions in the audio as the result.</p>
+                <a href="https://github.com/SohamMane19/ML-CP-RealTime-SER" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Mobile App for Visually Impaired</h3>
+                <p>An app with a voice-based interface for navigation, OCR, translation, and text-to-speech features.</p>
+                <a href="https://github.com/SohamMane19/EDI-SY2-AppForVisuallyImpaired" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <a href="resume.pdf" target="_blank">Download My Resume</a>
+    </section>
+
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/sohamm19" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
